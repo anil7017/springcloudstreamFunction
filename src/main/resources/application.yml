@@ -1,0 +1,10 @@
+spring.colud.stream:
+    function.definition: accumulate;receive;send
+    kafka:
+      binder:
+      brokers: localhost:9092
+    bindings:
+      send-out-0.destination: anilints
+      accumulate-in-0.destination: anilints
+      accumulate-out-0.destination: aniltotal
+      receive-in-0.destination: aniltotal
